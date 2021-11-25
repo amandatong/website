@@ -1,0 +1,54 @@
+.about {
+    line-height:1.2;
+
+    .about-misc {
+        z-index: -110;
+        .open-window {
+            padding-top:20px;
+        }
+
+        @media screen and (min-width: $md) {
+            #skills {
+                max-width: 35vw;
+            }
+        }
+
+        
+    }
+
+    .skills {
+        display:flex;
+        flex-wrap:wrap;
+
+        .skill {
+            line-height:1;
+            padding:0.3em 1em;
+            margin-right:0.5em;
+            margin-bottom:0.5em;
+            border-radius:15px;
+            font-weight:600;
+        }
+    }
+
+    .progress-bar-container {
+        display:flex;
+        line-height:2;
+        margin-bottom:0.5em;
+
+        .progress-bar {
+            display:block;
+            flex:1;
+            width:100%;
+            background-color: rgba(177, 177, 177, 0.3);
+            border-radius:15px;
+    
+            .progress {
+                height:100%;
+                border-radius:15px;
+                padding:0 1em;
+                font-size:0.9em;
+                font-weight:500;
+            }
+        }
+    }
+}

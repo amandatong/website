@@ -1,0 +1,166 @@
+$t-dur: 0.5s;
+
+html,body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: roc-grotesk-wide, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: all $t-dur ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all $t-dur ease-out;
+}
+
+
+a {
+    padding:0.1em;
+    text-decoration: none;
+    -webkit-transition: all $t-dur ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all $t-dur ease-out;
+}
+
+.mark, .open-window .head {
+    -webkit-transition: all $t-dur ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all $t-dur ease-out;
+}
+
+.dark {
+    background-color: $dark-bg;
+    color: $dark-text;
+    fill: $dark-text;
+    .header, .open-window .content { background-color: $dark-bg}
+    .mark, .open-window .head, a, .about .skill, .progress, .tag { background-color: $dark-red; color: $dark-text; }
+    a:hover { background-color: $light-red; }
+    .theme-switch:hover, .link:hover, .blob, .project-links a {color: $dark-red;fill:$dark-red}
+    .project-links a:hover { fill: $light-red }
+    .header .logo img { filter: invert(100%) }
+}
+
+.light {
+    background-color: $light-bg;
+    color: $light-text;
+    fill: $light-text;
+    
+    .header, .open-window .content { background-color: $light-bg}
+    .mark, .open-window .head, a, .about .skill, .progress, .tag { background-color: $light-red; color: $light-text; }
+    a:hover { background-color: $dark-red; }
+    .theme-switch:hover, .link:hover, .blob, .project-links a {color: $light-red;fill: $light-red}
+    .project-links a:hover { fill: $dark-red }
+}
+
+.open-window {
+    position:absolute;
+    width:61%;
+  
+    @media screen and (max-width: $md) {
+        // width:calc(100% - 4vw) !important;
+        width:calc(100% - 4vw) !important;
+        position: relative !important;
+        margin:auto !important;
+        left:0 !important;
+        right:0 !important;
+        top:150px !important;
+    }
+
+    // @media screen and (max-width: $sm) {
+    //     width:calc(100% - 4vw) !important;
+    //     position: relative;
+    // }
+    
+    // @media screen and (max-width: $sm) {
+    //     width:calc(100% - 4vw) !important;
+    // }
+    .head {
+        background-color: $light-red;
+        padding:0.5em;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        box-icon {
+            margin-left:0.25em;
+        }
+    }
+
+    .content {
+        border:1px solid $light-red;
+        padding:1.5em;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+.md-hide {
+    @media screen and (max-width: $md) {
+        display:none;
+    }
+}
+
+.section {
+    display: flex;
+    flex-grow: 1;
+    min-height:100vh;
+    padding-bottom:10vh;
+    width:100%;
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+
+// .home, .about, .projects, .contact {
+//     position:relative;
+//     min-height:100%;
+//     width:100%;
+//     height: auto !important;
+// }
+
+$proj-ht: 1650px;
+$proj-md-ht: $proj-ht + 550px;
+$proj-sm-ht: $proj-ht + 1950px;
+$proj-xs-ht: $proj-ht + 1800px;
+
+#projects {
+    height: $proj-ht;
+
+    @media screen and (max-width: $md) {
+        height:$proj-md-ht;
+    }
+
+    @media screen and (max-width: $sm) {
+        height:$proj-sm-ht;
+    }
+
+    @media screen and (max-width: $xs) {
+        height:$proj-xs-ht;
+    }
+}
+
+.footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding:2em;
+    height:150px;
+
+    .icons {
+        display:flex;
+        margin-bottom:0.5em;
+
+        a {
+            background-color:initial;
+
+            &:hover {
+                fill: rgba(177, 177, 177, 0.9);
+            }
+        }
+    }
+
+    box-icon {
+        width:3em;
+        height:2em;
+    }
+}

@@ -1,0 +1,46 @@
+.home {
+    display:flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    padding:2em;
+    height:calc(100% - 4em);
+
+    .title {
+        line-height:1.2;
+        font-size:50px;
+        font-weight:700;
+        // width:80%;
+        margin-bottom:0.5em;
+      
+        @media screen and (max-width: $md) {
+          font-size:40px;
+        }
+      
+        @media screen and (max-width: $sm) {
+          font-size:30px;
+        }
+      
+        mark {
+        //   background-color: black;
+          display: inline-block;
+          line-height: 0.75em;
+          padding-bottom: 0em;
+        }
+    }
+
+    .dive {
+        position:absolute;
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:3em;
+        cursor:pointer;
+        text-align: center;
+    }
+
+    .image-container {
+      position:absolute;
+      width:420px;
+      height:420px;
+    }
+}
