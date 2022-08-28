@@ -117,7 +117,7 @@ a {
 //     height: auto !important;
 // }
 
-$proj-ht: 1650px;
+$proj-ht: 1850px;
 $proj-md-ht: $proj-ht + 550px;
 $proj-sm-ht: $proj-ht + 1950px;
 $proj-xs-ht: $proj-ht + 1800px;
@@ -126,15 +126,18 @@ $proj-xs-ht: $proj-ht + 1800px;
     height: $proj-ht;
 
     @media screen and (max-width: $md) {
-        height:$proj-md-ht;
+        // height:$proj-md-ht;
+        height:auto;
     }
 
     @media screen and (max-width: $sm) {
-        height:$proj-sm-ht;
+        // height:$proj-sm-ht;
+        height:auto;
     }
 
     @media screen and (max-width: $xs) {
-        height:$proj-xs-ht;
+        // height:$proj-xs-ht;
+        height:auto;
     }
 }
 
