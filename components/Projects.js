@@ -6,6 +6,12 @@ export default function Projects() {
 
     const projects = [
         {
+            title: "Explore HMGICS Technology",
+            image: "/images/hmgics.png",
+            desc: "Interactive, animated website explaining the technology used at Hyundai's smart factory in Singapore. Aimed to build trust with customers about the manufacturing process within a smart factory. Built and designed from scratch, prototyped, then presented and pitched to the lead designers. Features translations in both English and Korean.",
+            tags: ["React", "Next.js", "Framer", "React Spring"]
+        },
+        {
             title: "Collectorly",
             image: "/images/collectorly.png",
             desc: "Online website for merchandise collectors to track the progress of their collections and items they have in transit. Currently in progress.",
