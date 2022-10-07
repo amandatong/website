@@ -9,7 +9,15 @@ export default function Projects() {
             title: "Explore HMGICS Technology",
             image: "/images/hmgics.png",
             desc: "Interactive, animated website explaining the technology used at Hyundai's smart factory in Singapore. Aimed to build trust with customers about the manufacturing process within a smart factory. Built and designed from scratch, prototyped, then presented and pitched to the lead designers. Features translations in both English and Korean.",
-            tags: ["React", "Next.js", "Framer", "React Spring"]
+            tags: ["React", "Next.js", "Framer", "React Spring"],
+            links: [ {
+                    url: "https://hmgicstech.vercel.app/",
+                    icon: <box-icon name='link-external' ></box-icon>,
+                },{
+                    url: "https://www.figma.com/file/O5HZecaM3NK8uYq1KRXaCw/Smart-Factory-Website-Design?node-id=39%3A378",
+                    icon: <box-icon type='logo' name='figma'></box-icon>,
+                }
+            ]
         },
         {
             title: "Collectorly",

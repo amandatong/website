@@ -17,7 +17,7 @@ export default function Home() {
             </OpenWindow>
             <OpenWindow title="welcome.txt" margin={["22vh", null, null, "2vw"]} icon="file">
                 <div className="title">
-                    Hi there! I'm <span class="mark">Amanda</span>, a student studying <span class="mark">computer science</span> and <span class="mark">neuroscience</span> at MIT.
+                    Hi there! I'm <span className="mark">Amanda</span>, a student studying <span class="mark">computer science</span> and <span class="mark">neuroscience</span> at MIT.
                 </div>
             </OpenWindow>
             <div className="dive">
